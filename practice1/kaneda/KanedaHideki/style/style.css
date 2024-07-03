@@ -1,0 +1,1266 @@
+@charset "utf-8"; 
+@media screen and (min-width: 375px) {
+body {
+    display: block;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    color: #333333;
+    margin: 0px;
+    width: 375px;
+}
+
+header {
+    display: flex;
+    width:375px;
+    height:51.71px;    
+}
+
+header .logo {
+    width: 240px;
+    height: 19.71px;
+    margin:12px 16px;
+    align-self:flex-end;
+}
+
+header .nMenu {
+    margin:16px 12px 15.71px 62px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 99;
+  }
+  
+  .nMenu .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 6px;
+    padding-top: 5px;
+    height: 12px;
+  }
+  
+  .nMenu .menu-icon .navicon {
+    background: #B71B26; 
+    display: block;
+    height: 2px; 
+    width: 31px; 
+    position: relative;
+    transition: background .4s ease-out; 
+  }
+  
+  .nMenu .menu-icon .navicon::before,
+  .nMenu .menu-icon .navicon::after {
+    background: #B71B26;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .4s ease-out; 
+    width: 100%;
+  }
+  .nMenu .menu-icon .navicon::before {top: 10px;} 
+  .nMenu .menu-icon .navicon::after {top: -10px;} 
+
+  .nMenu .menu {
+    background-color: rgba(255,255,255,0.8);
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height .6s;
+    text-align: center;
+    height: 532px;
+  }
+
+  .nMenu li {
+    font-family: 'Noto Serif JP','Noto Sans JP';
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+.liCon {
+    margin-top: 80px;
+}
+
+.liSer {
+    margin-top: 48px;
+}
+
+.liFlo {
+    margin-top: 48px;
+}
+
+.liQa {
+    margin-top: 48px;
+}
+
+.liInq {
+    margin-top: 48px;
+} 
+
+.nMenu .menu li a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .nMenu .menu-btn {
+    display: none;
+  }
+
+  .nMenu .menu-btn:checked ~ .menu {
+    margin: 0px 0px 0px 0px ;
+    max-height: 532px; 
+    transition: max-height .6s;
+  }
+ 
+  .nMenu .menu-btn:checked ~ .menu-icon .navicon {background: transparent;}
+  .nMenu .menu-btn:checked ~ .menu-icon .navicon::before {transform: rotate(-45deg);top: 0;}
+  .nMenu .menu-btn:checked ~ .menu-icon .navicon::after {transform: rotate(45deg);top: 0;}
+
+footer {
+    display: flex;
+    width:375px;
+    height: 45px;
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Noto Serif JP','Noto Sans JP';
+}
+
+footer p {
+    margin: 16px 65.5px;
+    font-size:smaller;
+    letter-spacing: .05em;    
+}
+
+.hero {
+    margin: 0px;
+    width: 375px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.chapter {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .1em; 
+    font-family: 'Noto Serif JP','Noto Sans JP';
+    line-height: 28px;
+}
+
+.subTitle {
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+    color: #223e69;
+    letter-spacing: .1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview {
+    margin: 24px 12px 0px 12px;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.subTitle::before, .subTitle::after {
+    border-top: 1px solid;
+    content: "";
+    width: 60.5px;
+    margin: 0px 8px 0px 8px;
+    color: #223E69;
+}
+
+.conceptPhrase {
+    margin-top: 24px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+}
+
+h1 {
+    margin: 48px 12px 0px 12px;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.service {
+    margin: 80px 12px 80px 12px;
+}
+
+section {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .1em; 
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    line-height: 28px;
+
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto Serif JP','Noto Sans JP';
+    font-weight: bolder;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto Serif JP','Noto Sans JP';
+    margin: 8px 0px 0px 0px;
+    line-height: 28px;
+    letter-spacing: .1em;
+    font-weight: 400;
+    justify-content: flex-start;
+}
+
+h5 {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 21px;
+    letter-spacing: .1em;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px 12px 0px 12px;
+}
+
+.bath .living .kitchen  {
+    letter-spacing: .05em;
+    font-size: 14px;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: .1em; 
+    margin: 12px 12px 0px 12px;
+    width: 351px;
+    height:42px;
+}
+
+.more {
+    text-align: right;
+    margin: 8px 12px 0px 12px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: .1em;
+    font-weight: normal;
+}
+
+.more img {
+    display:inline;
+    vertical-align: middle;
+}
+.constructionFlow {
+    background-color: rgba(34, 62, 105, 0.05);
+    width: 375px;
+}
+
+.constructionFlowH1 {
+    margin: 80px 0px 0px 0px;
+    display: block;
+    height: 456px;
+    width:375px;
+}
+
+.chapterFlow {
+    display: block;
+    font-size: 12px;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: .1em;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitleFlow {
+    display: flex;
+    color: #B71B26;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 8px 0px 24px 0px;
+}
+
+.subtitleFlow::before, .subtitleFlow::after {
+    border-top: 1px solid;
+    content: "";
+    width: 60.5px;
+    margin: 0px 8px 0px 8px;
+    color: #B71B26;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.ulFlow {
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 0px auto ;
+}
+
+.liFlow {
+    display: flex;
+    color: #ffffff;
+    background-color: #333333;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 32px;
+    letter-spacing: .1em;
+    border-radius: 32px;
+}
+
+.triangle60 {
+    display: flex;
+    margin: 8px auto ;
+    width:1px;
+    height: 1px;
+    border-top: 16px solid #B71B26;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    opacity: 0.6;
+    z-index: 10;
+  }
+
+.triangle70 {
+    display: flex;
+    margin: 8px auto ;
+    width:1px;
+    height: 1px;
+    border-top: 16px solid #B71B26;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    opacity: 0.7;
+    z-index: 10;
+  }
+
+.triangle80 {
+    display: flex;
+    margin: 8px auto ;
+    width:1px;
+    height: 1px;
+    border-top: 16px solid #B71B26;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    opacity: 0.8;
+    z-index: 10;
+  }
+
+.triangle90 {
+    display: flex;
+    margin: 8px auto ;
+    width:1px;
+    height: 1px;
+    border-top: 16px solid #B71B26;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    opacity: 0.9;
+    z-index: 10;
+  }
+
+.triangle100 {
+    display: flex;
+    margin: 8px auto ;
+    width:1px;
+    height: 1px;
+    border-top: 16px solid #B71B26;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    opacity: 1.0;
+    z-index: 10;
+  }
+
+.qLogo {
+    display: flex;
+    font-family: 'Noto Serif JP','Noto Sans JP';
+    background-color: #333333;
+    border-radius: 52px;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0px;
+}
+
+.text {
+    display: flex;
+    margin: 5.11px 1px 10.89px 9px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 26px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.questionSec {
+    margin: 0px 12px;
+}
+
+.q {
+    margin-left: 7px;
+    display: inline;
+    font-size: 16px;
+    line-height: 24px;
+    width: 308px;
+    height: 24px;
+    letter-spacing: .1em;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    text-align: start;
+    align-self: center;
+}
+
+.aLogo {
+    display: flex;
+    font-family: 'Noto Serif JP','Noto Sans JP';
+    background-color: #B71B26;
+    border-radius: 52px;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0px;
+}
+
+.a {
+    margin-left: 7px;
+    margin-top: 7px;
+    display: inline;
+    flex-wrap: nowrap;
+    width: 351px;
+    height: 78px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .1em;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    text-align: start;
+    align-self: center;
+}
+
+.q1 {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 351px;
+    height: 36px;
+}
+
+.a1 {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 351px;
+}
+
+.q2 {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 351px;
+    height: 36px;
+}
+
+.a2 {
+    margin-top: 33.1px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 351px;
+}
+
+.inquirySec {
+    display: block;
+    margin-top: 80px;
+    background-color: rgba(34, 62, 105, 0.05);
+    width: 375px;
+    height: 922px;
+}
+
+.subtitleInquiry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: stretch; */
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 14px;
+    margin: 24px 0px 18px 0px;
+    height: 50px;
+}
+
+.subtitleInquiry2 {
+    margin: 16px 82.5px 24px 82.5px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: .1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radioInquiryType {
+    display: flex;
+}
+
+.required {
+margin-left: 4px;
+display: flex;
+background-color: #B71B26;
+width: 40px;
+height: 18px;
+line-height: 10px;
+border-radius: 8px;
+}
+
+.requiredText {
+    color: #ffffff;
+    font-size: 10px;
+    letter-spacing: .1em;
+    line-height: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+.control {
+    width: 186px;
+    display: block;
+    margin: 2px 40px;
+    height: 16px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: .1em;
+}
+
+.radioInquiryType {
+    width: 375px;
+    display: inline;
+    /* margin-right: 40px; */
+
+}
+
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: center;
+    margin-bottom: 2.5px;
+}
+
+.name {
+    display: flex; 
+    margin: 24px auto 0px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    justify-content: center;
+}
+
+.furigana {
+    display: flex; 
+    margin: 24px auto 0px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    justify-content: center;
+}
+
+.tel {
+    display: flex; 
+    margin: 24px auto 0px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    justify-content: center;
+}
+
+.postCode {
+    margin-top: 10px;
+    display: flex;
+    width: 125px;
+    height: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.postcodeMark {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: .1em;
+}
+
+.userPostCode {
+    display: flex;
+    background: #ffffff;
+    width: 125px;
+    height: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.address {
+    display: flex; 
+    margin: 24px auto 0px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    justify-content: center;
+}
+
+.mail {
+    display: flex; 
+    margin: 24px auto 0px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    justify-content: center;
+}
+
+.mailConfirmation {
+    display: flex; 
+    margin: 24px auto 0px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    justify-content: center;
+}
+
+.textbox {
+    margin-top: 10px;
+    display: flex;
+    background: #ffffff;
+    width: 351px;
+    height: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.content {
+    margin-top: 24px;
+    font-size: 16px;
+    font-family: 'Noto Sans JP','Noto Serif JP';
+    line-height: 16px;
+    letter-spacing: .1em;
+    font-weight: bold;
+
+}
+
+.textareaContent {
+    margin-top: 10px;
+    display: flex;
+    background: #ffffff;
+    width: 351px;
+    height: 120px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.submit {
+    display: flex;
+    margin:24px 87.5px 16px 87.5px;
+    justify-content: center;
+    width:200px;
+    height: 48px;
+    color: #ffffff;
+    background-color: #333333;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pageTop {
+    margin-right: 12px;
+    width: 375px;
+    height: 126px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    width:46px;
+    height: 46px;
+    text-align: center;
+    margin: 80px 12px 0.02px 317px;
+}
+
+.arrowCss {
+    margin-top: 15.89px;
+    width: 22px; 
+    height: 22px; 
+    border-left: 3px solid #ffffff; 
+    border-top: 3px solid #ffffff; 
+    transform: rotate(45deg); 
+    }
+}
+
+@media screen and (min-width: 768px) {
+   body {
+    width: 100%;
+    height: 100%;
+   }
+
+.hero {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    width: 768px;
+    text-align: center;
+}
+
+.constructionFlow {
+    width: 100%;
+}
+
+.constructionFlowH1 {
+    width: 100%;
+}
+
+.conceptPhrase {
+    width: 508px;
+    margin: 24px 130px 0px 130px;
+    text-align: left;
+}
+
+
+h5 {
+    width: 508px;
+    margin: 24px 130px 0px 130px;
+}
+
+h4 {
+    width: 100%;
+}
+
+.q1, .a1, .q2, .a2, .q, .a {
+    width: 508px;
+}
+
+.q1, .a1, .q2, .a2 {
+    margin: 0px auto;
+}
+
+.inquirySec {
+    width: 768px;
+}
+
+.inquiry {
+    width:  100%;
+    margin: 0px;
+}
+
+.textbox {
+    margin: 0px 130px 0px 118px;
+    width: 508px;
+}
+
+.postCode {
+    margin: 0px 130px 24px 118px;
+    width: 508px;
+}
+
+.textareaContent {
+    margin: 0px 130px 0px 118px;
+    width: 508px;
+}
+
+.submit {
+    margin: 48px 284px 0px 284px;
+}
+
+footer {
+    width: 768px;
+}
+
+footer p {
+    margin: 16px 118px 0px 130px;
+    width: 508px;
+    font-size:smaller;
+    letter-spacing: .05em;  
+    text-align: center;
+}
+
+.pageTop {
+    width: 768px;
+}
+
+}
+ @media screen and (min-width: 1366px) {
+    body {
+        width: 1366px;
+    }
+    
+    h1 {
+        width: 1020px;
+        margin: 160px 0px 0px 0px;
+        font-size: 20px;
+        letter-spacing: .1em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .conceptPhrase {
+        width: 1020px;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: .1em;
+    }
+
+    .hero {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    h1 {
+        margin: auto;
+        text-align: center;
+    
+    }
+
+    #concept {
+        margin-top: 160px;
+    }
+
+    .constructionFlow {
+        width: 100%;
+    }
+    
+    .constructionFlowH1 {
+        width: 100%;
+    }
+    
+    .conceptPhrase {
+        width: 1020px;
+        margin: 24px 0px 0px 0px;
+        text-align: left;
+    }
+    
+    .ulFlow {
+        display: flex;
+
+    }
+
+    .serviceMenu {
+        width: 1020px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .list{
+        width: 300px;
+        height: 351.51px;
+    }
+
+    .bath {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .living {
+        width: 300px;
+        padding: 0px;   
+    }
+
+    .kitchen {
+        width: 300px;
+        padding: 0px;
+    }
+
+    h5 {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .more {
+        width: 300px;
+        height: 48px;
+        text-align: right;
+        margin: 8px 12px 0px 12px;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: .1em;
+        font-weight: normal;
+
+    }
+
+    .more img {
+        display:inline;
+        vertical-align: middle;
+    }
+    
+    h4 {
+        width: 300px;
+        margin: 0px;
+    }
+    
+    h5 {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .q1, .a1, .q2, .a2, .q, .a {
+        width: 1020px;
+    }
+    
+    .inquirySec {
+        width: 768px;
+    }
+    
+    .inquiry {
+        width:  100%;
+        margin: 0px;
+    }
+    
+    .textbox {
+        margin: 0px 130px 0px 118px;
+        width: 508px;
+    }
+    
+    .postCode {
+        margin: 0px 130px 24px 118px;
+        width: 508px;
+    }
+    
+    .textareaContent {
+        margin: 0px 130px 0px 118px;
+        width: 508px;
+    }
+    
+    .questionSec {
+        width: 1020px;
+        margin: auto;
+        height: 430px;
+    }
+
+    .chapter {
+        margin: auto;
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing:.1em;
+        font-weight: bold;
+        height: 42px;
+    }
+
+    h3 {
+        margin: 0px auto 16px auto;
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 42px;
+        letter-spacing: .1em;
+    }
+
+    .question {
+        margin-top: 160px;
+    }
+
+    .subTitle {
+        font-weight: normal;
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: .1em;
+    }
+    .q1 {
+        width: 1020px;
+        height: 52px;
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .q2 {
+        margin-top: 48px;
+        width: 1020px;
+        height: 52px;
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .qLogo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .aLogo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .text {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .a1,.a2 {
+        margin-top: 16px;
+        width: 1020px;
+        height: 52px;
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .q {
+        margin: 0px 0px 0px 8px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: .1em;
+    }
+
+    .a {
+        margin: 0px 0px 0px 8px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: .1em;
+        height: 24px;
+    }
+
+
+    .submit {
+        margin: 48px 284px 0px 284px;
+    }
+    
+    .inquirySec {
+        width: 1366px;
+        margin-top: 160px;
+
+    }
+
+    .inquiry {
+        padding-top: 48px;
+    }
+
+    h3 {
+        height: 42px;
+    }
+
+    form {
+        margin: 48px 173px 0px 173px;
+        padding-top: 24px;
+        width: 1020px;
+        height: 1000px;
+        /* grid-template-rows: 24px 52px 52px 52px 52px 52px 52px 52px 52px;
+        grid-template-columns: 50% 50%; */
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .subtitleInquiry {
+        /* grid-row:1/2;
+        grid-column: 1/2; */
+        margin: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 20px;
+        letter-spacing: .1em;
+    }
+
+    .control {
+        /* grid-row:2/3;
+        grid-column: 2/3; */
+        display: flex;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 20px;
+        letter-spacing: .1em;
+        margin-right: 40px;
+    }
+
+    input[type="radio"] {
+        width: 24px;
+        height: 24px;
+        vertical-align: center;
+        margin-bottom: 2.5px;
+    }
+
+    .name {
+        width: 400px;
+        display: flex; 
+        margin: 0px;
+        font-family: 'Noto Sans JP','Noto Serif JP';
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: .1em;
+        justify-content: center;
+    }
+
+    .textbox {
+        display: flex;
+        width: 332px;
+        float: right;
+        margin: 0px;
+    }
+
+    footer {
+        width: 1366px;
+    }
+    
+    footer p {
+        margin: 16px 118px 0px 130px;
+        width: 1366px;
+        font-size:smaller;
+        letter-spacing: .05em;  
+        text-align: center;
+    }
+    
+    .pageTop {
+        width: 1366px;
+    }
+
+    .arrow  {
+        width: 60px;
+        height: 60px;
+        margin: 0px 24px 0px 1280px;
+    }
+
+    .header {
+        margin: 24px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .logo {
+        width: 400px;
+        height: 32.85px;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    header .nMenu {
+        width: 629px;
+        height: 16px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: .1em;
+        /* margin:16px 12px 15.71px 62px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 20px;
+        z-index: 99; */
+      }
+
+    .nMenu li {
+        display: flex;
+        justify-content: right;
+        font-family: 'Noto Serif JP','Noto Sans JP';
+        font-size: 16px;
+        line-height: 16px;
+        z-index: 100;
+      }
+    
+      .nMenu .menu-icon {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: 6px;
+        padding-top: 5px;
+        height: 12px;
+      }
+      
+      .nMenu .menu-icon .navicon {
+        background: #B71B26; 
+        display: none;
+        height: 2px; 
+        width: 31px; 
+        position: relative;
+        transition: background .4s ease-out; 
+      }
+      
+      .nMenu .menu-icon .navicon::before,
+      .nMenu .menu-icon .navicon::after {
+        background: #B71B26;
+        content: '';
+        display: none;
+        height: 100%;
+        position: absolute;
+        transition: all .4s ease-out; 
+        width: 100%;
+      }
+      /* .nMenu .menu-icon .navicon::before {top: 10px;} 
+      .nMenu .menu-icon .navicon::after {top: -10px;}  */
+
+      .liCon {
+        color: #333333;
+        z-index: 100;
+        margin-top: 80px;
+    }
+    
+    .liSer {
+        color: #333333;
+        margin-top: 48px;
+        z-index: 100;
+    }
+    
+    .liFlo {
+        color: #333333;
+        margin-top: 48px;
+        z-index: 100;
+    }
+    
+    .liQa {
+        color: #333333;
+        margin-top: 48px;
+        z-index: 100;
+    }
+    
+    .liInq {
+        color: #333333;
+        margin-top: 48px;
+        z-index: 100;
+    } 
+
+    .subtitleInquiry2 {
+        margin: 0px;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: .1em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+ }
+
+
+ @media screen and (min-width:3840px) {
+    body {
+    width: 100%;
+    }   
+ }
